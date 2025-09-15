@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 25;
+    background-color: pink;
+    font-weight: 600;
+}
+
+
+
+h1{
+    color: rgb(255, 223, 186);
+    font-family: "Lobster", sans-serif;
+    text-shadow: 4px 4px 6px #ad630f;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+    <title>CoffeAPI☕</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CoffeAPI☕</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="variedades">Variedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tiendas">Tiendas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="usuarios">Usuarios</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/cafe1.jpg" class="d-block w-100" style="height:300px; object-fit:cover;" alt="cafe en taza">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>¡Bienvenidos a la API de Cafés!☕✨</h1>
+        <p>Descubrí sus variedades y experimentá el verdadero sabor del café</p>
+      </div>
+    </div>
+</div>
+
+<main>
+
+  <section id="variedades">
+    <div class="container-fluid">
+      <div class="card text-center">
+  <div class="card-header">
+    Endpoint /api/variedades
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">¿Cómo elegir mi café?</h5>
+    <p class="card-text">Conocé las diferentes formas de preparar café y el paso a paso de cada una✨.</p>
+    <a href="http://localhost:5000/api/variedades" class="btn btn-warning btn-outline btn-sm">Ver variedades👁️</a>
+  </div>
+</div>
+    </div>
+  </section>
+
+
+  <section id="tiendas">
+    <div class="container-fluid">
+      <div class="card text-center">
+  <div class="card-header">
+    Endpoint /api/tiendas
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Dónde comprar mi café?</h5>
+    <p class="card-text">Elegí tu tienda favorita y experimentá el sabor de un rico café.</p>
+    <a href="http://localhost:5000/api/tiendas" class="btn btn-warning btn-outline btn-sm">Ver tiendas👁️</a>
+  </div>
+</div>
+    </div>
+  </section>
+
+
+</main>
+
+
+<footer>
+         <p>Pavón Agustina | Apps Híbridas | Prof. Jonathan Cruz | DWM4AP</p>
+  
+   
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

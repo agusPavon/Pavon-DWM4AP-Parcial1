@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api menus",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusPavon/AppHibridasAct.git"
+  },
+  "author": "AgusPavon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agusPavon/AppHibridasAct/issues"
+  },
+  "homepage": "https://github.com/agusPavon/AppHibridasAct#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongodb": "^6.19.0",
+    "moongose": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
