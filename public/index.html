@@ -7,15 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Lobster&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
     <title>CoffeAPI☕</title>
 </head>
 <body>
-    
+    <header id="navigation">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">CoffeAPI☕</a>
+    <a class="navbar-brand text-white" href="#">CoffeAPI☕</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,6 +37,7 @@
     </div>
   </div>
 </nav>
+</header>
 
  <div class="carousel-inner">
     <div class="carousel-item active">
@@ -47,37 +51,37 @@
 
 <main>
 
-  <section id="variedades">
-    <div class="container-fluid">
-      <div class="card text-center">
-  <div class="card-header">
-    Endpoint /api/variedades
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">¿Cómo elegir mi café?</h5>
-    <p class="card-text">Conocé las diferentes formas de preparar café y el paso a paso de cada una✨.</p>
-    <a href="http://localhost:5000/api/variedades" class="btn btn-warning btn-outline btn-sm">Ver variedades👁️</a>
-  </div>
-</div>
-    </div>
-  </section>
-
-
-  <section id="tiendas">
-    <div class="container-fluid">
-      <div class="card text-center">
-  <div class="card-header">
+<section class="container-fluid">
+<div class="row row-cols-1 row-cols-md-2 g-4 py-2 px-4">
+  <div class="col text-center">
+    <div class="card h-100 rounded-start-pill">
+     <div class="card-header">
     Endpoint /api/tiendas
   </div>
-  <div class="card-body">
-    <h5 class="card-title">Dónde comprar mi café?</h5>
-    <p class="card-text">Elegí tu tienda favorita y experimentá el sabor de un rico café.</p>
-    <a href="http://localhost:5000/api/tiendas" class="btn btn-warning btn-outline btn-sm">Ver tiendas👁️</a>
-  </div>
-</div>
+    <div class="card-body">
+    <h3 class="card-title">Dónde comprar mi café?☕</h3>
+      <p class="card-text">Elegí tu tienda favorita y experimentá el sabor de un rico café.</p>
+      <a href="http://localhost:5000/api/tiendas" class="btn btn-warning btn-outline btn-sm">Ver tiendas👁️</a>
     </div>
-  </section>
+    </div>
+  </div>
 
+    <div class="col text-center">
+    <div class="card h-100 rounded-end-pill">
+     <div class="card-header">
+    Endpoint /api/variedades
+  </div>
+    <div class="card-body">
+    <h3 class="card-title">¿Cómo elegir mi café?⁉️</h3>
+       <p class="card-text">Conocé las diferentes formas de preparar café y el paso a paso de cada una✨.</p>
+    <a href="http://localhost:5000/api/variedades" class="btn btn-warning btn-outline btn-sm">Ver variedades👁️</a>
+  </div>
+    </div>
+    </div>
+  </div>
+
+
+</section>
 
 </main>
 

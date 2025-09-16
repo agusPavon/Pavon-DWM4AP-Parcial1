@@ -4,8 +4,14 @@ import User from '../models/UsuarioModel.js';
 const newUser= async(request, response )=> {
     const {nombre, email, password, foto } = request.body;
     const nuevoUsuario = new User({nombre, email, password, foto });
-    const data = await nuevoUsuario.save();
-response.status(201).json({msg: 'listop', data})
+     if(nombre && email && password){
+         const data = await nuevoUsuario.save();
+         response.status(201).json({msg: 'listop', data})
+    }else if (!nombre || !email || !password){
+           response.status(404).json({msg: 'Completa todos los campos!(nombre, email,password, foto )'})
+
+    }
+
 }
 
 const listUser = async (request , response) => {

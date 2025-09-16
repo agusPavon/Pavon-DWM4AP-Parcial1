@@ -1,15 +1,22 @@
 *{
     box-sizing: border-box;
     margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+
+body{
+     background-color: #ffe6d2;
 }
 
 footer{
     display: flex;
     justify-content: center;
     height: 25;
-    background-color: pink;
-    font-weight: 600;
+    background-color:#9a1E22;
+    color: #fff2ea;
 }
 
 
@@ -18,4 +25,27 @@ h1{
     color: rgb(255, 223, 186);
     font-family: "Lobster", sans-serif;
     text-shadow: 4px 4px 6px #ad630f;
+}
+
+#navigation nav{
+    background-color: #9a1E22 !important;
+}
+
+.nav-link{
+    color: white;
+}
+
+.card{
+    box-shadow: 2px 2px 2px rgba(224, 134, 0, 0.699);
+    background-color: #fff2ea;
+    }
+
+.card-title{
+    color: #9a1E22;
+    font-family: "Lobster", sans-serif;
+    text-shadow: 4px 4px 6px #ad630f;
+}
+
+.btn{
+    background-color: #ff7901 ;
 }

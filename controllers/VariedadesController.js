@@ -2,9 +2,16 @@ import Variedad from '../models/VariedadesModel.js';
 
 const newVariedad= async(request, response )=> {
     const {nombre, preparación, foto } = request.body;
-    const nuevoUsuario = new Variedad({nombre, preparación, foto });
-    const data = await nuevoUsuario.save();
-response.status(201).json({msg: 'listop', data})
+    const nuevaVariedad = new Variedad({nombre, preparación, foto });
+    if(nombre && preparación ){
+         const data = await nuevaVariedad.save();
+         response.status(201).json({msg: 'listop', data})
+    }else if (!nombre || !preparación){
+           response.status(404).json({msg: 'Completa todos los campos!(nombre y preparación)'})
+
+    }
+   
+
 }
 
 const listVariedad = async (request , response) => {
