@@ -1,16 +1,17 @@
-// const moongose= require('moongose');
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
+
 const esquema = new Schema({
-    nombre : String,
-    direccion : String ,
-    calificacion: String, 
-    foto: String
+    nombre: { type: String, required: true },
+    direccion: { type: String, required: true },
+    descripcion: { type: String },
+    foto: { type: String },
+    user: { 
+        type: Schema.Types.ObjectId, 
+        ref: "User", 
+        required: true } // admin que la creó
 });
 
-const Tienda = mongoose.model('Tienda', esquema);
-
-// module.exports= User;
-
+const Tienda = mongoose.model("Tienda", esquema);
 export default Tienda;

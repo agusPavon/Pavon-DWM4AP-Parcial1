@@ -7,6 +7,14 @@ import routerAPI from './routes/index.js';
 import path from 'path';
 import fs from "fs"
 // const dotenv = require('dotenv');
+import cors from 'cors';
+const PORT = process.env.PORT;
+const app = express();
+app.use(express.json());
+
+app.use( cors () );
+
+
 
 dotenv.config();
 const urldb = process.env.URI_DB;
@@ -20,9 +28,7 @@ db.on('error', ()=> {
 db.once('open', ()=> {
     console.log('conexión con el db 👍');
 })
-const PORT = process.env.PORT;
-const app = express();
-app.use(express.json());
+
 
 app.use('/api', express.static('public'));
 // app.get("/api/variedades", (req, res) => {

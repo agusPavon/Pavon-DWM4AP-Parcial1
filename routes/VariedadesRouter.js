@@ -1,9 +1,12 @@
 // const express = require ('expresss');
 import express from 'express';
-import {newVariedad, listVariedad, getVariedadByID, deleteVariedadByID, updateVariedadByID} from '../controllers/VariedadesController.js'
-
-// const { listVariedad } = require('../controllers/UsuarioController.js');
+import isAdmin from '../middlewares/isAdmin.js';
+import {newVariedad, listVariedad, getVariedadByID, deleteVariedadByID, updateVariedadByID, postVariedad} from '../controllers/VariedadesController.js'
+import { validarToken } from '../middlewares/auth.js'; //empezamos a proteger las rutas, tengo q hacerlo en el front y en el back
+// // const { listVariedad } = require('../controllers/UsuarioController.js');
 const router = express.Router();
+
+router.use(validarToken); // protege todo
 
 router.get('/', listVariedad);
 router.get('/:id', getVariedadByID);
