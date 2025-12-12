@@ -12,9 +12,10 @@ const PORT = process.env.PORT;
 const app = express();
 app.use(express.json());
 
-app.use( cors () );
-
-
+app.use(cors({
+  origin: ["https://frontend-phi-blond-39.vercel.app"],
+  credentials: true
+}));
 
 dotenv.config();
 const urldb = process.env.URI_DB;
