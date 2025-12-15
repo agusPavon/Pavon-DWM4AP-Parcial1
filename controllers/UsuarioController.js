@@ -11,15 +11,16 @@ const newUser= async(request, response )=> {
     const {nombre, email, password, foto } = request.body;
     
     if (!nombre || !email || !password){
-           response.status(404).json({msg: 'Completa todos los campos!(nombre, email,password, foto )'})
+
+        return response.status(404).json({msg: 'Completa todos los campos!(nombre, email y password )'})
 
     }
 
 
     const user = await User.findOne({email: email});
     if (user){
-        response.status(404).json({msg: 'el email ya esta registrado'});
-        return;
+       return response.status(409).json({msg: 'el email ya esta registrado'});
+        
 
     }
     console.log(user)
