@@ -5,8 +5,7 @@ import { listTienda, newTienda, updateTiendaByID, deleteTiendaByID } from "../co
 
 const router = express.Router();
 
-// Todos pueden ver
-router.get("/", listTienda);
+router.get("/", validarToken, listTienda);
 
 // Solo admin puede modificar
 router.post("/", validarToken, isAdmin, newTienda);
